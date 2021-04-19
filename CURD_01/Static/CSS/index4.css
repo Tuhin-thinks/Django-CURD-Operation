@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main_div{
+    height: 450px;
+    width: 400px;
+    background-color: bisque;
+    margin: 5% 35%;
+    border-radius: 5px;
+    box-shadow: 1.5px 2px 15px black;
+}
+
+.head{
+    height: 17%;
+    width: 100%;
+    /* border: 2px solid yellow; */
+}
+.head h2{
+    text-align: center;
+    padding-top: 20px;
+    letter-spacing: 1.9px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+form{
+    height: 70%;
+    width: 100%;
+    /* border: 2px solid rgb(255, 0, 0); */
+    margin-top: 10%;
+}
+.frms{
+    height: 20%;
+    width: 100%;
+    /* border: 2px solid yellow;  */
+    margin-top: 2%;
+    position: relative;
+}
+.frms input{
+    width: 75%;
+    margin-left: 12%;
+    margin-top: 3%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    letter-spacing: 1.7px;
+}
+.frms input:focus{
+    border-bottom: 2px solid rgb(0, 255, 0);
+}
+.frms span{
+    font-size: 12px;
+    position: absolute;
+    color: red;
+    left: 12.5%;
+    top: 55%;
+    width: 78%;
+}
+.all_btn{
+    margin-top: 3%;
+    height: 22%;
+    width: 100%;
+    /* border: 2px solid red; */
+    position: relative;
+}
+.all_btn input{
+    height: 47%;
+    width: 75%;
+    margin-left: 12%;
+    margin-top: 1%;
+    outline: none;
+    border: none;
+    background-color: rgb(2, 247, 247);
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+.all_btn input:hover{
+    background-color: #4aff4a;
+}
+.all_btn a{
+    position: absolute;
+    bottom: 5%;
+    left: 13%;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: 1.8px;
+}
+.all_btn a:hover{
+    color: brown;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{% static 'CSS/index1.css' %}" />
+</head>
+<body>
+    <div class="main_div">
+        <div class='head'>
+            <h2>Regester Here</h2>
+        </div>
+        <form name="form" method="post" novalidate>
+            {% csrf_token %}
+                {% for field in form %}
+                    <div class='frms'>
+                        {{field}}
+                        <span>{{field.errors | striptags }}</span>
+                       
+                    </div>
+                {% endfor %}
+            <div class="all_btn">
+                <input type='submit' value='Sign up' class='btns'/>
+                <a href="{% url 'LogIn' %}">Login</a>
+            </div>
+        </form>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{% static 'CSS/index3x.css' %}" />
+</head>
+<body>
+    <div class="main_content">
+        <div class="left">
+            <div class="data">     
+                <p><span>Username:</span> {{username}}</p>
+                <p><span>Name:</span> {{first_name}} {{last_name}}</p>
+                <p><span>Email:</span> {{email}}</p>                
+            </div>
+            <a href="{% url 'ChangePassword' %}"><button type="button" class="btn">Password Change</button></a>
+            
+            <a href="{% url 'LogOut' %}"><button type="button" class="btn">Logout</button></a>
+            
+
+            <a href="{% url 'ShowAllNotes' %}">
+                <button type="button" class='btn btns'>Show Notes</button>
+            </a>
+
+
+            
+        </div>
+
+        <div class="right">
+            <form method="POST" >
+                {% csrf_token %}
+                {% for field in form %}
+                    <div class='frms'>
+                        {{field}}
+                        <span>{{field.errors | striptags }}</span>
+                        
+                    </div>
+                {% endfor %}
+
+                <div class="all_btn">
+                    <input type='submit' value='Save' class='btns'/>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>
