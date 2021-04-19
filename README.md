@@ -2,7 +2,8 @@
 
 ### Sign up
 
-            ![regester](https://user-images.githubusercontent.com/67157274/115278195-ce9a0780-a162-11eb-9ae9-edee6773dc6e.PNG)
+![regester](https://user-images.githubusercontent.com/67157274/115278275-e5d8f500-a162-11eb-8f79-b89856737c53.PNG)
+
 
 
 
